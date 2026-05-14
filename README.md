@@ -87,17 +87,6 @@ bash ./test_scripts/test_sd.sh
 # Test qwen
 bash ./test_scripts/test_qwen.sh
 ```
-
-
-### ⚙️ Training
-
-```bash
-# Train sd
-bash ./test_scripts/test_sd.sh
-# Train qwen
-bash ./test_scripts/test_qwen.sh
-```
-
 ### 🧪 Evaluation
 ```bash
 bash ./eval/eval.sh
