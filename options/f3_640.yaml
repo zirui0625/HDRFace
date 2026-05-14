@@ -1,0 +1,88 @@
+exp_tag: odtsr-v11_640 
+pretrained_ckpt_path_gen: /data/vjuicefs_ai_camera_pgroup_ql/public_data/GTR-BF/trainee/models/ODTSR/weight.pth 
+pretrained_ckpt_path_dis: ~
+learning_rate: !!float 5e-5
+learning_rate_dis: !!float 5e-6
+accumulate_grad_batches: 4
+max_epochs: 2000 
+use_gradient_checkpointing: True
+viz_iters: 100
+save_ckpt_iters: 500
+relaxed_mean_size: 100
+use_dual_condition_flag: False
+
+rgb_w: 1.0
+lpips_w: 1.0
+gan_type: vanilla
+gan_loss_weight: 0.02
+real_label_val: 1.0
+fake_label_val: 0.0
+d_iters: 1 
+r1_regularization: 5.0
+r2_regularization: 0.0
+variance: 0.005
+lq_no_noise_prob: 0.5
+
+data:
+  train:
+    phase: train
+    train_txt:
+      /data/juicefs_sharing_data/11191271/data.txt
+    gt_size: &gtsize 768
+    crop_size: *gtsize
+    input_size_h: 640
+    input_size_w: 640
+    first_resize_h: 1536
+    first_resize_w: 1024
+    io_backend:
+      type: disk
+    use_hflip: True
+    use_rot: False
+    mean: &val_m 0.5
+    std: &val_s 0.5
+    scale: 1
+    deg_simple: 0.0
+    deg_realesr: 0.05
+    size_ratio: 0.007
+    file_ratio: 0.001
+    resize_prob: 1.0
+    crop_prob: 1.0
+    null_text_ratio: 0.001
+
+degradation:
+  gt_size: *gtsize
+  crop_size: *gtsize
+  scale: 1
+  blur_kernel_size: 11 # 21
+  kernel_list: ['iso', 'aniso', 'generalized_iso', 'generalized_aniso', 'plateau_iso', 'plateau_aniso']
+  kernel_prob: [0.45, 0.25, 0.12, 0.03, 0.12, 0.03]
+  sinc_prob: 0.1
+  blur_sigma: [0.2, 3]
+  betag_range: [0.5, 4]
+  betap_range: [1, 2]
+  resize_prob: [0.1, 0.8, 0.1]
+  resize_range: [0.5, 1.5]
+  gaussian_noise_prob: 0.0
+  noise_range: [1, 5]
+  poisson_scale_range: [0.05, 0.2]
+  gray_noise_prob: 0.0
+  jpeg_range: [30, 95]
+  second_degra_prob: 0.7
+  second_blur_prob: 0.4
+  blur_kernel_size2: 11 
+  kernel_list2: ['iso', 'aniso', 'generalized_iso', 'generalized_aniso', 'plateau_iso', 'plateau_aniso']
+  kernel_prob2: [0.45, 0.25, 0.12, 0.03, 0.12, 0.03]
+  sinc_prob2: 0.1
+  blur_sigma2: [0.2, 1.5]
+  betag_range2: [0.5, 4]
+  betap_range2: [1, 2]
+  resize_prob2: [0.1, 0.8, 0.1]
+  resize_range2: [0.5, 1.5]
+  gaussian_noise_prob2: 0.0
+  noise_range2: [1, 5]
+  poisson_scale_range2: [0.05, 0.2]
+  gray_noise_prob2: 0.0
+  jpeg_range2: [30, 95]
+  final_sinc_prob: 0.8
+  sf: 2
+  no_degradation_prob: 0.0

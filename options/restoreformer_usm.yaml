@@ -1,0 +1,33 @@
+target: dataset.ffhq_degradation_dataset_group.FFHQDegradationDataset
+params:
+  dataroot_gt:
+    - "/data/vjuicefs_ai_camera_pgroup_ql/public_data/GTR-BF/trainee/dataset/FFHQR-retouch/FFHQ/images1024x1024"
+
+  io_backend:
+    type: disk
+
+  use_hflip: True
+  mean: [0.5, 0.5, 0.5]
+  std:  [0.5, 0.5, 0.5]
+  out_size: 512
+
+  blur_kernel_size: [40, 41]
+  kernel_list: ['iso', 'aniso']
+  kernel_prob:  [0.5, 0.5]
+  blur_sigma:   [0.1, 10]
+  downsample_range: [0.8, 8]
+  noise_range:  [0, 20]
+  jpeg_range:   [60, 100]
+
+  usm:
+    enable: True
+
+  color_jitter_prob: ~
+  color_jitter_shift: 20
+  color_jitter_pt_prob: ~
+  gray_prob: ~
+  gt_gray: True
+
+  crop_components: True
+  component_path: preset/models/FFHQ_eye_mouth_landmarks_512.pth
+  eye_enlarge_ratio: 1.4

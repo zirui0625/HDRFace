@@ -1,0 +1,27 @@
+target: dataset.ffhq_degradation_dataset_pair.FFHQPairedDataset
+params:
+  dataroot_gt:
+    - ""
+  dataroot_lq:
+    - ""
+  
+  io_backend:
+    type: disk
+  
+  use_hflip: True
+  mean: [0.5, 0.5, 0.5]
+  std: [0.5, 0.5, 0.5]
+  out_size: 512
+
+  usm:
+    enable: True
+
+  color_jitter_prob: ~ 
+  color_jitter_shift: 20
+  color_jitter_pt_prob: ~
+  gray_prob: ~
+  gt_gray: True
+
+  crop_components: True
+  component_path: preset/models/FFHQ_eye_mouth_landmarks_512.pth
+  eye_enlarge_ratio: 1.4
