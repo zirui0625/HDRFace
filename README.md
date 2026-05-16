@@ -65,15 +65,6 @@ Please download the following weights and place them in the `./preset/models` di
 
 ## 📂 3. Dataset Preparation
 
-### 📊 Training Datasets
-  1. **Getting GT Datasets**:
-
-   - We use the FFHQ dataset as our training dataset. Download **FFHQ** ([Link](https://github.com/nvlabs/ffhq-dataset)).
-
-  2. **Getting SR Datasets**: 
-   - To speed up training, we restore the images required for training in advance. You can download them here ([Link]()).
-   - After downloading the dataset, set `sr_root`  in the training script to the dataset path. 
-  
 ### 🦅 Test Datasets
 -  We evaluate our method on three datasets: CelebA-Test, LFW-Test, and CelebChild. The download links can be found in  Google Drive ([Link]()) or VQFR ([Link](https://github.com/TencentARC/VQFR)).
 ## 🚀 4. Usage
