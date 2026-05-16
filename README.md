@@ -103,6 +103,14 @@ Our codes are based on OSDFace ([Link](https://github.com/jkwang28/OSDFace)), OD
 If you find our work or code useful for your research, please cite:
 
 ```latex
-
+@misc{wang2026hdrfacerethinkingfacerestoration,
+      title={HDRFace: Rethinking Face Restoration with High-Dimensional Representation}, 
+      author={Zirui Wang and Xianhui Lin and Yi Dong and Bo Wei and Gangjian Zhang and Siteng Ma and Zebiao Zheng and Xing Liu and Hong Gu and Minjing Dong},
+      year={2026},
+      eprint={2605.14821},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.14821}, 
+}
 ```
 
