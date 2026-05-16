@@ -13,7 +13,7 @@ Zirui Wang<sup>1,2*</sup>&nbsp; Xianhui Lin<sup>2</sup>&nbsp; Yi Dong<sup>2</sup
 
 <a href="https://arxiv.org/abs/2605.14821">📄 arXiv Paper</a> &nbsp; 
 <a href="https://zirui0625.github.io/projects/HDRFace">🌐 Project Page</a> &nbsp; 
-<a href="">🤗 Hugging Face Models</a>
+<a href="https://huggingface.co/zirui0625/HDRFace">🤗 Hugging Face Models</a>
 </h4>
 
 </div>
@@ -21,8 +21,7 @@ Zirui Wang<sup>1,2*</sup>&nbsp; Xianhui Lin<sup>2</sup>&nbsp; Yi Dong<sup>2</sup
 <div align="center">
 <img src="./figures/firstimg.png" width="90%">
 </div>
-Figure 1. Motivation and improvements of HDRFace. (Left) Existing diffusion-based
-methods rely solely on low-quality inputs, yielding outputs that lack fine-grained detail and faithful identity preservation. We address this by injecting high-dimensional visual representations into the generative pipeline. (Right) Our method consistently outperforms OSDFace in perceptual quality (LPIPS), identity consistency (ArcFace degree), and image quality (TOPIQ).
+Figure 1. Motivation and improvements of HDRFace. (Left) Existing diffusion-based methods rely solely on low-quality inputs, yielding outputs that lack fine-grained detail and faithful identity preservation. We address this by injecting high-dimensional visual representations into the generative pipeline. (Right) Our method consistently outperforms OSDFace in perceptual quality (LPIPS), identity consistency (ArcFace degree), and image quality (TOPIQ).
 
 <!-- <h2> <p align="center">📦 HDRFace 📦</p> </h2>
 <div align="center">
@@ -71,7 +70,7 @@ Please download the following weights and place them in the `./preset/models` di
 
 ### 🎨 Quick Start (Demo)
 You can download our restored image for testing here ([Link]()).
-Download our pretrained models ([Link]()) and place them in `./pretrained` and `./pretrained_qwen`.
+Download our pretrained models ([Link](https://huggingface.co/zirui0625/HDRFace)) and place them in `./pretrained` and `./pretrained_qwen`.
 ```bash
 # Test sd
 bash ./test_scripts/test_sd.sh
