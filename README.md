@@ -11,7 +11,7 @@ Zirui Wang<sup>1,2*</sup>&nbsp; Xianhui Lin<sup>2</sup>&nbsp; Yi Dong<sup>2</sup
 
 <h4>
 
-<a href="">📄 arXiv Paper</a> &nbsp; 
+<a href="https://arxiv.org/abs/2605.14821">📄 arXiv Paper</a> &nbsp; 
 <a href="https://zirui0625.github.io/projects/HDRFace">🌐 Project Page</a> &nbsp; 
 <a href="">🤗 Hugging Face Models</a>
 </h4>
