@@ -60,7 +60,7 @@ Please download the following weights and place them in the `./preset/models` di
 | **SD XL-base** | [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) | `sdxl_path` |
 | **DINOv3** | [facebookresearch/dinov3](https://github.com/facebookresearch/dinov3) | `dino_path` |
 | **Qwen-Image** | [Qwen/Qwen-Image](https://huggingface.co/Qwen/Qwen-Image) | `qwen_path` |
-| **Others** | [Google Drive]() | `Arcface/Landmarks` |
+| **Others** | [Google Drive](https://drive.google.com/file/d/19nINhuKpJTeUZse--lqRnkjaqbpHtPUK/view?usp=drive_link) | `Arcface/Landmarks` |
 
 ## 📂 3. Dataset Preparation
 
