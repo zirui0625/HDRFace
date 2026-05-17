@@ -1,0 +1,13 @@
+python ./eval/eval.py \
+        --output_folder ./results/HDRFace_Qwen_celebA \
+        --target_folder ./data/celebA-Test-HQ\
+        --gpu_ids 2 \
+        --eval_landmark \
+        --eval_arcface \
+        --arcface_model_path ./preset/eval/resnet18_110.pth \
+        --eval_fid \
+        --fid_stats ./preset/eval/inception_FFHQ_512.pth \
+        --batch_size 1 \
+        --num_sample 10 \
+        --num_workers 1 \
+        --eval_all_optional
