@@ -65,11 +65,11 @@ Please download the following weights and place them in the `./preset/models` di
 ## 📂 3. Dataset Preparation
 
 ### 🦅 Test Datasets
--  We evaluate our method on three datasets: CelebA-Test, LFW-Test, and CelebChild. The download links can be found in  Google Drive ([Link]()) or VQFR ([Link](https://github.com/TencentARC/VQFR)).
+-  We evaluate our method on three datasets: CelebA-Test, LFW-Test, and CelebChild. The download links can be found in  Google Drive ([Link](https://drive.google.com/file/d/1UpjpcQGpp_P4hgOlA4FRLfOBb3V7vV3Y/view?usp=drive_link)) or VQFR ([Link](https://github.com/TencentARC/VQFR)).
 ## 🚀 4. Usage
 
 ### 🎨 Quick Start (Demo)
-You can download our restored image for testing here ([Link]()).
+You can download our restored image for testing here ([Link](https://drive.google.com/file/d/1UpjpcQGpp_P4hgOlA4FRLfOBb3V7vV3Y/view?usp=drive_link)).
 Download our pretrained models ([Link](https://huggingface.co/zirui0625/HDRFace)) and place them in `./pretrained` and `./pretrained_qwen`.
 ```bash
 # Test sd
